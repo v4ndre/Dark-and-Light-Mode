@@ -1,0 +1,135 @@
+* {
+    font-family: 'Dm sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**Body**/
+
+html, body {
+    height: 100%;
+    background-color: hsl(19, 100%, 96%);
+    
+}
+
+
+/**HEADER**/
+
+header {
+    
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: relative;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-shadow: 0px -1px 30px -7px rgba(0,0,0,0.75);
+}
+
+.nav-logo {
+    align-items: center;
+    column-gap: .5rem;
+    transition: color .3s;
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-left: 8vw;
+    
+}
+
+.nav-logo img {
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-right: 8vw;
+}
+.bi-sun {
+    font-size: 1.55em;
+}
+.bi-moon {
+    display: none;
+}
+
+/**main**/
+
+.card {
+    display: flex;
+}
+
+.main {
+    position: relative;
+}
+
+.card-title {
+    font-size: 75px;
+    margin-bottom: 0.3rem;
+    margin-top: 24.5vh;
+}
+
+.card-title img {
+    width: 75px;
+}
+
+.card-description {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+button {
+    
+
+    background-color: hsl(19, 64%, 54%);
+    border: none;
+    border-radius: 2em;
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: 90%;
+}
+
+.card-sushi {
+    width: 700px;
+    position: absolute;
+    right: 8vw;
+    top: 180px;
+}
+
+.card-data {
+    margin-left: 8vw;
+}
+
+/**Dark Theme**/
+
+.dark,
+.dark body {
+    background-color: hsl(19, 12%, 8%);
+    color: #fff;
+    
+}
+
+.dark p {
+    color: hsl(19, 16%, 65%);
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+.dark .bi-sun {
+    display: none;
+}
